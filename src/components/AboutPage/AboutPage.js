@@ -11,13 +11,6 @@ const bgColors = {
   "Blue": "#00B1E1"
 };
 
-var imgStyle = {
-  height: "171",
-  width: "180"
-};
-
-
-
 export default class AboutPage extends Component {
   render() {
     return (
@@ -25,29 +18,38 @@ export default class AboutPage extends Component {
         <br />
         <Grid className="fluid">
           <Row >
-            <Col md={3}>
-              <Image height={180} width={180} src={me}  circle/>
+            <Col md={1}>
             </Col>
-            <Col md={9}>
-              <h2>About Me:</h2><br/>
-              <p></p>
-        </Col>
-          </Row><br/>
+            <Col md={3}>
+              <Image height={180} width={180} src={me} circle />
+            </Col>
+            <Col md={7}>
+              <h2>About Me:</h2><br />
+              <p>
+                I am a recent graduate from Prime Digital Academy and am looking to get started on my
+                path as a Software Developer. I believe that the internet is a great equalizer and can
+                helps people big an small get their message out into the world where people can hear it.
+                I've been with my fiance, who is an amazing photojournalist and artist, since 2012 and we
+                love to travel the world together. I've included some photos of our travels below. I'm looking
+                forward to seeing where my career in Software Development brings me.
+              </p>
+            </Col>
+          </Row><br />
           <Row>
             <Col md={2}>
-        </Col>
+            </Col>
             <Col md={8}>
-          <Carousel>
-            <Carousel.Item>
-              <img width={900}  alt="" src={image} />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img width={900}  alt="" src={image2} />
-            </Carousel.Item>
-          </Carousel>
-          </Col>
+              <Carousel>
+                <Carousel.Item>
+                  <img width={900} alt="" src={image} />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img width={900} alt="" src={image2} />
+                </Carousel.Item>
+              </Carousel>
+            </Col>
             <Col md={2}>
-        </Col>
+            </Col>
           </Row>
         </Grid>
         <Footer />
