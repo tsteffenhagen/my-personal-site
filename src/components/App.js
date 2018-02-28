@@ -3,15 +3,23 @@ import logo from '../logo.svg';
 import { Link } from 'react-router-dom';
 import './App.css';
 import FA  from 'react-fontawesome';
-import {Button} from 'react-bootstrap'
+import {Button} from 'react-bootstrap';
+import Background from '../images/home.png'
 
+var sectionStyle = {
+  width: "100%",
+  height: "400px",
+  backgroundImage: `url(${Background})`,
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover"
+};
 
 class App extends Component {
   render() {
     return (
       <div className="App">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
-        <header className="App-header">
+        <header className="App-header" style={ sectionStyle }>
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <h1 className="App-title">Tyler Steffenhagen</h1>
           <div>

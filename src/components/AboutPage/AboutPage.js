@@ -4,11 +4,13 @@ import Footer from '../Footer/Footer';
 import image from '../../images/test.png';
 import image2 from '../../images/Banner.png';
 import { Carousel } from 'react-bootstrap';
-import { Grid } from 'react-bootstrap'
-import { Row } from 'react-bootstrap'
-import { Col } from 'react-bootstrap'
+import { Grid } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 
-
+const bgColors = {
+  "Blue": "#00B1E1"
+};
 
 
 
@@ -18,7 +20,8 @@ export default class AboutPage extends Component {
     return (
       <div>
         <Grid className="fluid">
-          <Row>
+        <div style={{backgroundColor : bgColors.Blue, width: '100%'}}>
+          <Row >
             <Col md={6}>
               <h1>This is the about page </h1>
             </Col>
@@ -26,6 +29,7 @@ export default class AboutPage extends Component {
               <p>2 of 2</p>
         </Col>
           </Row>
+          </div>
           <Row>
             <Col md={3}>
             </Col>
