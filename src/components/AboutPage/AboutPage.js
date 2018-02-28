@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import FA from 'react-fontawesome';
 import Footer from '../Footer/Footer';
-import image from '../../images/test.png';
-import image2 from '../../images/Banner.png';
+import image from '../../images/carousel1.png';
+import image2 from '../../images/carousel2.png';
 import { Carousel } from 'react-bootstrap';
 import { Grid } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
@@ -31,17 +31,13 @@ export default class AboutPage extends Component {
           </Row>
           </div>
           <Row>
-            <Col md={3}>
-            </Col>
-            <Col md={6}>
+            <Col md={12}>
           <Carousel>
             <Carousel.Item>
-              <img width={900} height={400} alt="" src={image} />
-
+              <img width={1000} height={500} alt="" src={image} />
             </Carousel.Item>
             <Carousel.Item>
-              <img width={900} height={400} alt="" src={image2} />
-
+              <img width={1000} height={500} alt="" src={image2} />
             </Carousel.Item>
           </Carousel>
           </Col>

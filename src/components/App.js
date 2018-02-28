@@ -7,10 +7,10 @@ import {Button} from 'react-bootstrap';
 import Background from '../images/home.png'
 
 var sectionStyle = {
-  width: "100%",
-  height: "400px",
+  height: "725px",
   backgroundImage: `url(${Background})`,
   backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
   backgroundSize: "cover"
 };
 
