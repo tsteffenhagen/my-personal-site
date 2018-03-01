@@ -8,7 +8,7 @@ import Background from '../images/home.png'
 
 var sectionStyle = {
   height: "725px",
-  backgroundImage: `url(${Background})`,
+  background: `url(${Background})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
   backgroundSize: "cover"
@@ -22,7 +22,6 @@ class App extends Component {
         <header className="App-header" style={ sectionStyle }>
         <Navbar inverse fixedTop>
           <Navbar.Header>
-
           <h1 className="App-title">Tyler Steffenhagen</h1>
             </Navbar.Header>
             <Nav>
@@ -37,7 +36,6 @@ class App extends Component {
           </NavItem>
           </Nav>
           </Navbar>
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
         </header>
       </div>
     );

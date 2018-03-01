@@ -41,18 +41,6 @@ export default class HomePage extends Component {
         </Col>
           </Row>
           </div>
-          <Row>
-            <Col md={12}>
-          <Carousel>
-            <Carousel.Item>
-              <img width={1000} height={500} alt="" src={image} />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img width={1000} height={500} alt="" src={image2} />
-            </Carousel.Item>
-          </Carousel>
-          </Col>
-          </Row>
         </Grid>
         <Footer />
       </div>
